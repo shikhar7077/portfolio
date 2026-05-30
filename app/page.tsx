@@ -238,7 +238,7 @@ export default function ShivamPortfolio() {
             </a>
 
             <a
-              href="www.linkedin.com/in/shivam-kharat"
+              href="https://www.linkedin.com/in/shivam-kharat"
               className="px-8 py-4 rounded-2xl border border-white/20"
             >
               LinkedIn
