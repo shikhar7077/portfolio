@@ -1,4 +1,5 @@
-export default function ShivamPortfolio() {
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";export default function ShivamPortfolio() {
   const skills = {
     Languages: ["Python", "SQL", "Shell Scripting"],
     Backend: ["FastAPI", "REST APIs", "Django"],
@@ -232,24 +233,29 @@ export default function ShivamPortfolio() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="mailto:shivamkharat21@gmail.com"
-              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold"
+              className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-black font-semibold"
             >
-              shivamkharat21@gmail.com
+              <MdEmail size={20} />
+              Email
             </a>
 
             <a
-              href="https://www.linkedin.com/in/shivam-kharat"
+              href="https://www.linkedin.com/in/shivam-kharat/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-2xl border border-white/20"
+              className="flex items-center gap-2 px-8 py-4 rounded-2xl border border-white/20"
             >
+              <FaLinkedin size={20} />
               LinkedIn
             </a>
 
             <a
               href="https://github.com/shikhar7077"
-              className="px-8 py-4 rounded-2xl border border-white/20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-8 py-4 rounded-2xl border border-white/20"
             >
+              <FaGithub size={20} />
               GitHub
             </a>
           </div>
