@@ -239,6 +239,8 @@ export default function ShivamPortfolio() {
 
             <a
               href="https://www.linkedin.com/in/shivam-kharat"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-2xl border border-white/20"
             >
               LinkedIn
