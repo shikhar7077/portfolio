@@ -87,13 +87,13 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
           </p>
 
           <h1 className="text-5xl md:text-7xl font-black leading-tight">
-            Building AI Powered Backend Systems
+            Software Engineer Building AI-Powered Products at Scale
           </h1>
 
           <p className="mt-8 text-gray-300 text-lg leading-relaxed max-w-2xl">
-            Software and AI Engineer with 1.8+ years of experience building scalable backend systems,
-            automation workflows, REST APIs, and enterprise AI integrations using Python, FastAPI,
-            MongoDB, PostgreSQL, and LLM technologies.
+            Software Engineer with 1.8+ years of experience building backend systems, 
+            automation platforms, data pipelines, and RAG, AI-powered applications using Python, 
+            FastAPI, MongoDB, PostgreSQL, and LLM technologies.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -209,25 +209,31 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
           <li className="flex items-start gap-2">
             <span className="text-blue-400 mt-1.5">•</span>
             <span>
-              <strong className="text-white font-semibold">Architected scalable Python backend services</strong> and automation workflows using Scrapy and Selenium, streamlining enterprise data-processing pipelines and eliminating manual overhead.
+              <strong className="text-white font-semibold">Developed scalable Python backend services and automation workflows</strong> using Scrapy and Selenium, streamlining enterprise data-processing pipelines and reducing manual effort.
             </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-blue-400 mt-1.5">•</span>
             <span>
-              <strong className="text-white font-semibold">Designed automated infrastructure operations</strong> on Linux via cron, deploying a secure MongoDB backup, remote transfer, and disaster recovery pipeline to guarantee data redundancy.
+              <strong className="text-white font-semibold">Integrated Ollama and external LLM APIs into production workflows</strong>, using cron, implementing secure MongoDB backup, remote transfer, and disaster recovery workflows to improve data reliability. 
             </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-blue-400 mt-1.5">•</span>
             <span>
-              <strong className="text-white font-semibold">Integrated localized LLMs (Ollama) and external APIs</strong> into production workflows, leveraging advanced prompt engineering to automate text classification, deep analysis, and report generation.
+              <strong className="text-white font-semibold">Enhanced software delivery processes </strong> through GitLab CI/CD pipelines, structured Git workflows, code reviews, and deployment automation, improving development efficiency and release quality.
             </span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-blue-400 mt-1.5">•</span>
             <span>
-              <strong className="text-white font-semibold">Streamlined development and deployment cycles</strong> by implementing robust GitLab CI/CD pipelines, structured Git branching strategies, and automated deployment scripts to minimize production errors.
+              <strong className="text-white font-semibold">Developed automation utilities</strong> for file processing, text parsing, API integrations, and operational monitoring across enterprise applications.
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-blue-400 mt-1.5">•</span>
+            <span>
+              <strong className="text-white font-semibold">Collaborated on backend systems</strong> leveraging MongoDB and PostgreSQL for scalable data storage, retrieval, and workflow automation. 
             </span>
           </li>
         </ul>
