@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";export default function ShivamPortfolio() {
   const skills = {
@@ -8,6 +10,19 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
     AI: ["RAG Piplines", "LLM Integration", "Prompt Engineering", "Ollama"],
     Cloud: ["Google Cloud Platform"]
   };
+
+
+  const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
 
   const projects = [
     {
@@ -23,14 +38,37 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
   ];
 
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden">
+    <main id="top" className="min-h-screen bg-black text-white overflow-hidden">
       {/* Background */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_top_right,#1e3a8a,transparent_35%),radial-gradient(circle_at_bottom_left,#7c3aed,transparent_35%)] opacity-40" />
 
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 bg-black/40">
+      <nav
+        className={`sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 bg-black/80 shadow-lg transition-all duration-300 ${
+          scrolled ? "py-2" : "py-4"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold tracking-wide">Shivam Kharat</h1>
+          <a
+          href="#top"
+          className="flex items-center gap-3 hover:opacity-90 transition"
+        >
+          <img
+            src="/favicon.ico"
+            alt="Shivam Kharat Logo"
+            className={`rounded-full object-cover border border-white/20 transition-all duration-300 ${
+              scrolled ? "w-8 h-8" : "w-12 h-12"
+            }`}
+          />
+
+          <h1
+            className={`font-bold tracking-wide transition-all duration-300 ${
+              scrolled ? "text-xl" : "text-2xl"
+            }`}
+          >
+            Shivam Kharat
+          </h1>
+        </a>
           <div className="hidden md:flex gap-6 text-sm text-gray-300">
             <a href="#about" className="hover:text-white transition">About</a>
             <a href="#skills" className="hover:text-white transition">Skills</a>
@@ -154,23 +192,46 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
         <h2 className="text-4xl font-bold mb-14">Experience</h2>
 
         <div className="rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl">
-          <div className="flex flex-col md:flex-row md:justify-between gap-4 mb-8">
-            <div>
-              <h3 className="text-3xl font-bold">Software Developer</h3>
-              <p className="text-blue-400 text-lg mt-2">Demos Foundation</p>
-            </div>
-
-            <p className="text-gray-400">Aug 2024 – Present</p>
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 mb-8">
+          <div>
+            <h3 className="text-3xl font-bold text-white">Software Developer</h3>
+            <p className="text-blue-400 text-lg mt-2 font-medium">Demos Foundation</p>
+            {/* Added Tech Stack for quick recruiter scanning */}
+            <p className="text-sm text-gray-400 mt-2">
+              <span className="text-blue-400/80 font-semibold">Tech Stack:</span> Python, Selenium, Scrapy, MongoDB, Postgres, GitLab CI/CD, Linux, Cron, LLM, Ollama
+            </p>
           </div>
 
-          <ul className="space-y-4 text-gray-300 leading-relaxed">
-            <li>• Developed Python backend services and enterprise automation workflows.</li>
-            <li>• Built Linux cron-based scheduling systems for automated operations.</li>
-            <li>• Integrated LLM APIs and Ollama services for intelligent text analysis.</li>
-            <li>• Automated MongoDB backup & restoration systems with disaster recovery workflows.</li>
-            <li>• Improved development lifecycle using GitLab CI/CD and deployment automation.</li>
-          </ul>
+          <p className="text-gray-400 font-medium md:text-right">Aug 2024 – Present</p>
         </div>
+
+        <ul className="space-y-4 text-gray-300 leading-relaxed list-none">
+          <li className="flex items-start gap-2">
+            <span className="text-blue-400 mt-1.5">•</span>
+            <span>
+              <strong className="text-white font-semibold">Architected scalable Python backend services</strong> and automation workflows using Scrapy and Selenium, streamlining enterprise data-processing pipelines and eliminating manual overhead.
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-blue-400 mt-1.5">•</span>
+            <span>
+              <strong className="text-white font-semibold">Designed automated infrastructure operations</strong> on Linux via cron, deploying a secure MongoDB backup, remote transfer, and disaster recovery pipeline to guarantee data redundancy.
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-blue-400 mt-1.5">•</span>
+            <span>
+              <strong className="text-white font-semibold">Integrated localized LLMs (Ollama) and external APIs</strong> into production workflows, leveraging advanced prompt engineering to automate text classification, deep analysis, and report generation.
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-blue-400 mt-1.5">•</span>
+            <span>
+              <strong className="text-white font-semibold">Streamlined development and deployment cycles</strong> by implementing robust GitLab CI/CD pipelines, structured Git branching strategies, and automated deployment scripts to minimize production errors.
+            </span>
+          </li>
+        </ul>
+      </div>
       </section>
 
       {/* Projects */}
@@ -207,7 +268,7 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
 
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
           <h3 className="text-2xl font-bold">
-            B.Tech – Artificial Intelligence
+            B.Tech – Artificial Intelligence Honors with Data Science
           </h3>
 
           <p className="text-blue-400 mt-2">
