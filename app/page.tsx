@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
     Backend: ["FastAPI", "REST APIs", "Django"],
     Databases: ["MongoDB", "PostgreSQL"],
     DevOps: ["Git", "GitLab CI/CD", "Linux", "Cron Jobs"],
-    AI: ["LLM Integration", "Prompt Engineering", "Ollama"],
+    AI: ["RAG Piplines", "LLM Integration", "Prompt Engineering", "Ollama"],
     Cloud: ["Google Cloud Platform"]
   };
 
