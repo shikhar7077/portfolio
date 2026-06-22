@@ -6,8 +6,15 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
     Languages: ["Python", "SQL", "Shell Scripting"],
     Backend: ["FastAPI", "REST APIs", "Django"],
     Databases: ["MongoDB", "PostgreSQL"],
-    DevOps: ["Git", "GitLab CI/CD", "Linux", "Cron Jobs"],
-    AI: ["RAG Piplines", "LLM Integration", "Prompt Engineering", "Ollama"],
+    DevOps: ["Git", "GitLab", "Linux", "Cron Jobs"],
+    AI: ["RAG Pipelines", "LLM Integration", "Prompt Engineering", "Ollama"],
+    "Web Scraping": [
+      "Scrapy",
+      "Selenium",
+      "Web Crawling",
+      "Data Extraction",
+      "Browser Automation"
+    ],
     Cloud: ["Google Cloud Platform"]
   };
 
@@ -91,9 +98,9 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
           </h1>
 
           <p className="mt-8 text-gray-300 text-lg leading-relaxed max-w-2xl">
-            Software Engineer with 1.8+ years of experience building backend systems, 
-            automation platforms, data pipelines, and RAG, AI-powered applications using Python, 
-            FastAPI, MongoDB, PostgreSQL, and LLM technologies.
+            Software Engineer with 1.8+ years of experience building backend systems,
+            automation platforms, web scraping pipelines, and AI-powered applications
+            using Python, FastAPI, Scrapy, Selenium, MongoDB, PostgreSQL, and LLM technologies.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -143,6 +150,11 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
                 <h3 className="text-4xl font-bold">Cloud</h3>
                 <p className="text-gray-400 mt-2">DevOps & GCP</p>
               </div>
+
+              <div className="rounded-2xl bg-white/5 p-6 border border-white/10">
+                <h3>Data</h3>
+                <p>Web Scraping & Extraction</p>
+              </div>
             </div>
           </div>
         </div>
@@ -153,9 +165,11 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
         <div className="max-w-4xl">
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            I specialize in building scalable backend systems, automation workflows, and AI-powered
-            enterprise applications. My expertise includes FastAPI development, database architecture,
-            Linux automation, and integrating LLM technologies into real-world systems.
+            I specialize in building scalable backend systems, web scraping solutions,
+            automation workflows, and AI-powered enterprise applications. My expertise
+            includes FastAPI development, Scrapy and Selenium-based data extraction,
+            database architecture, Linux automation, and integrating LLM technologies
+            into production systems.
           </p>
         </div>
       </section>
@@ -331,7 +345,7 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
-        © 2026 Shivam Kharat • AI & Backend Engineer
+        © 2026 Shivam Kharat • Backend & AI Engineer
       </footer>
     </main>
   );
