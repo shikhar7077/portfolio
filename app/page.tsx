@@ -152,8 +152,8 @@ import { MdEmail } from "react-icons/md";export default function ShivamPortfolio
               </div>
 
               <div className="rounded-2xl bg-white/5 p-6 border border-white/10">
-                <h3>Data</h3>
-                <p>Web Scraping & Extraction</p>
+                <h3 className="text-4xl font-bold">Data</h3>
+                <p className="text-gray-400 mt-2">Web Scraping & Extraction</p>
               </div>
             </div>
           </div>
